@@ -10,4 +10,4 @@ WORKDIR /usr/src/OneBuyAPI
 RUN pip3 install -r requirements.txt -i https://pypi.doubanio.com/simple
 RUN chmod +x auto_down.sh
 RUN crontab auto_down.cron
-CMD python3 manage.py runserver localhost:80
+CMD python3 manage.py runserver localhost:8000
